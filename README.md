@@ -13,7 +13,23 @@ This is a jQuery plugin to make Ajax pagination in ExpressionEngine a little eas
 			<h2>{title}</h2>
 			{content}
 		</article>
-		{pagination}
+		{paginate}
+			{pagination_links}
+				<ul class="pagination">
+					{previous_page}
+						<li><a href="{pagination_url}">&laquo;</a></li>
+					{/previous_page}
+					
+					{page}
+						<li{if current_page} class="active"{/if}><a href="{pagination_url}">{pagination_page_number}</a></li>
+					{/page}
+					
+					{next_page}
+						<li><a href="{pagination_url}">&raquo;</a></li>
+					{/next_page}
+				</ul>
+			{/pagination_links}
+		{/paginate}
 	{/exp:channel:entries}
 </section>
 ```

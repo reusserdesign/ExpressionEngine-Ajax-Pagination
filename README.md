@@ -62,3 +62,6 @@ fadeOpacity:	.5						// The opacity level on the article wrapper when the Ajax r
 
 ## Notes
 This has only really been tested with _our_ standard ExpressionEngine pagination methods. Meaning, this may or may not work when using this with Wordpress or content management systems. Fork it and make it better! My jQuery skills are pretty n00bish.
+
+## Credits
+Again, I'm a jQuery n00b. Much of this code was integrated, dissected, and taught to me via [Design Aeon](http://www.designaeon.com/wordpress-ajax-pagination). The tutorial was very well documented, and it helped me further my jQuery knowledge for this. Also, huge kudos to Dan Eden for his awesome [CSS-based loader](http://dribbble.com/shots/631496-Spinspinspin-CSS). You can thank him that "retina", "gif", and "extra http request" are no longer scary words.

@@ -1,7 +1,7 @@
-# ExpressionEngine Ajax Pagination
+# Pager
 
 ## Description
-This is a jQuery plugin to make Ajax pagination in ExpressionEngine a little easier (and nicer looking!)
+Pager is a jQuery plugin to make Ajax pagination in ExpressionEngine a little easier (and nicer looking!)
 
 ## Demo
 Sorry, it's not a live demo, but [the demo video](http://cl.ly/IGDP) should help you see what's going on here.

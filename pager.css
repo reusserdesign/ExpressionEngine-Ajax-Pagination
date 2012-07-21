@@ -1,0 +1,47 @@
+.faded {
+	opacity: .5;
+}
+
+#loader {
+	-webkit-animation: spin 1s infinite linear;
+	-moz-animation: spin 1s infinite linear;
+	-ms-animation: spin 1s infinite linear;
+	animation: spin 1s infinite linear;
+	background-color: transparent;
+	border: 3px solid;
+	border-radius: 50%;
+	border-right-color: transparent;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	color: #555;
+	display: block;
+	height: 10px;
+	position: relative;
+	width: 10px;
+}
+
+#loader:after {
+	border: 4px solid transparent;
+	border-left-color: inherit;
+	content: '';
+	display: block;
+	height: 0;
+	position: absolute;
+	right: -50%;
+	top: -50%;
+	width: 0;
+}
+
+@-webkit-keyframes spin {
+	to { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+	to { -moz-transform: rotate(360deg); }
+}
+@-ms-keyframes spin {
+	to { -ms-transform: rotate(360deg); }
+}
+@keyframes spin {
+	to { transform: rotate(360deg); }
+}

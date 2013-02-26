@@ -1,7 +1,7 @@
 # Pager
 
 ## Description
-Pager is a jQuery plugin to make Ajax pagination in ExpressionEngine a little easier (and nicer looking!)
+Pager is a jQuery plugin to make Ajax pagination + history in ExpressionEngine a little easier (and nicer looking!).
 
 ## Demo
 Sorry, it's not a live demo, but [the demo video](http://cl.ly/IGDP) should help you see what's going on here.
@@ -22,11 +22,11 @@ Sorry, it's not a live demo, but [the demo video](http://cl.ly/IGDP) should help
 					{previous_page}
 						<li><a href="{pagination_url}">&laquo;</a></li>
 					{/previous_page}
-					
+
 					{page}
 						<li{if current_page} class="active"{/if}><a href="{pagination_url}">{pagination_page_number}</a></li>
 					{/page}
-					
+
 					{next_page}
 						<li><a href="{pagination_url}">&raquo;</a></li>
 					{/next_page}
@@ -40,8 +40,9 @@ Sorry, it's not a live demo, but [the demo video](http://cl.ly/IGDP) should help
 ### Add Pager Javascript (don't forget jQuery!) to document
 ```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="pager/pager.min.js"></script>
-<script src="pager/index.js"></script>
+<script src="hashchange.js"></script>
+<script src="pager.js"></script>
+<script src="index.js"></script>
 ```
 
 ### Add Pager CSS for the kewl loading animation (all CSS-based, thanks to [Dan Eden](http://dribbble.com/shots/631496-Spinspinspin-CSS))
@@ -67,4 +68,8 @@ fadeOpacity:	.5						// The opacity level on the article wrapper when the Ajax r
 This has only really been tested with _our_ standard ExpressionEngine pagination methods. Meaning, this may or may not work when using this with Wordpress or content management systems. Fork it and make it better! My jQuery skills are pretty n00bish.
 
 ## Credits
-Again, I'm a jQuery n00b. Much of this code was integrated, dissected, and taught to me via [Design Aeon](http://www.designaeon.com/wordpress-ajax-pagination). The tutorial was very well documented, and it helped me further my jQuery knowledge for this. Also, huge kudos to Dan Eden for his awesome [CSS-based loader](http://dribbble.com/shots/631496-Spinspinspin-CSS). You can thank him that "retina", "gif", and "extra http request" are no longer scary words.
+Again, I'm a jQuery n00b. Much of this code was integrated, dissected, and taught to me via [Design Aeon](http://www.designaeon.com/wordpress-ajax-pagination). The tutorial was very well documented, and it helped me further my jQuery knowledge for this.
+
+A massive shoutout to the [hashchange](http://benalman.com/projects/jquery-hashchange-plugin/) plugin for the Ajax history support.
+
+Also, huge kudos to Dan Eden for his awesome [CSS-based loader](http://dribbble.com/shots/631496-Spinspinspin-CSS). You can thank him that "retina", "gif", and "extra http request" are no longer scary words.
